@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
-import Home from './components/Home'
+import ParticlesCanvas from './components/ParticlesCanvas'
+import Header from './components/Header'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Home/>
+        <Header/>
+        <ParticlesCanvas/>
       </header>
     </div>
   );
