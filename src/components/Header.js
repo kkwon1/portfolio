@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+import { IoIosArrowDown } from "react-icons/io";
 
 const HeaderContainer = styled.div`
   text-align: center;
@@ -7,23 +8,46 @@ const HeaderContainer = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  z-index: 1;
+  color: white;
+  user-select: none;
 `
 
-const Name = styled.h1`
-  font-family: 'Roboto'font-family: 'Roboto', 'sans-serif';
+const Greeting = styled.div`
   font-weight: 300;
+  font-size: 75px;
 `
 
-const Occupation = styled.h2`
-  font-family: 'Roboto'font-family: 'Roboto', 'sans-serif';
+const Occupation = styled.div`
   font-weight: 300;
+  font-size: 48px;
+  margin: 10px;
+`
+
+const ChevronKeyFrames = keyframes`
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+`
+
+const AnimatedChevron = styled(IoIosArrowDown)`
+  font-size: 48px;
+  margin-top: 10%;
+  animation: ${ChevronKeyFrames} 2s ease-in-out 0s infinite;
 `
 
 function Header() {
   return (
     <HeaderContainer>
-      <Name>Hey, I'm Kevin Kwon!</Name>
+      <Greeting>Hey, I'm Kevin Kwon!</Greeting>
       <Occupation>Software Developer</Occupation>
+      <AnimatedChevron/>
     </HeaderContainer>
   );
 }

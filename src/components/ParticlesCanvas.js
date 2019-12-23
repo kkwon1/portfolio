@@ -8,9 +8,12 @@ const ParticlesContainer = styled(Particles)`
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+  flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	z-index: 1;
+	background-color: #252A42;
+  min-height: 100vh;
+  color: white;
 `
 
 function ParticlesCanvas() {
@@ -19,7 +22,7 @@ function ParticlesCanvas() {
       <ParticlesContainer params={{
 					"particles": {
 							"number": {
-									"value": 85
+									"value": 65
 							},
 							"size": {
 									"value": 2

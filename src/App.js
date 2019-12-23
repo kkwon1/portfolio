@@ -1,16 +1,22 @@
 import React from 'react';
-import './App.css';
-import ParticlesCanvas from './components/ParticlesCanvas'
-import Header from './components/Header'
+import styled from 'styled-components'
+import ParticlesCanvas from './components/ParticlesCanvas';
+import Header from './components/Header';
+import About from './components/About';
+
+const AppContainer = styled.div`
+  width: 100vw;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <AppContainer>
+      <div>
         <Header/>
         <ParticlesCanvas/>
-      </header>
-    </div>
+      </div>
+      <About/>
+    </AppContainer>
   );
 }
 
