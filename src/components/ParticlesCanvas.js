@@ -11,7 +11,7 @@ const ParticlesContainer = styled(Particles)`
   flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #252A42;
+	background-color: #292F4B;
   min-height: 100vh;
   color: white;
 `
