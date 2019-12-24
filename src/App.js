@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import ParticlesCanvas from './components/ParticlesCanvas';
 import Header from './components/Header';
 import About from './components/About';
-import Hello from './components/Hello';
 import NavBar from './components/NavBar';
-import { Link , Events, scrollSpy } from 'react-scroll'
+import Experience from './components/Experience';
+import { Link , Events, scrollSpy } from 'react-scroll';
 
 const AppContainer = styled.div`
   width: 100vw;
@@ -33,18 +33,20 @@ class App extends React.Component {
     return (
       <AppContainer>
         <div>
-          <Link activeClass="active" to="navbarSection" spy={true} smooth="easeInOutQuad" duration={750}>
+          <Link activeClass="active" to="navbar" spy={true} smooth="easeInOutQuad" duration={750}>
             <Header/>
             <ParticlesCanvas/>
           </Link>
         </div>
-        <div id="navbarSection">
+        <div id="navbar">
           <NavBar/>
         </div>
-        <div id="aboutSection">
+        <div id="about">
           <About/>
         </div>
-        <Hello/>
+        <div id="experience">
+          <Experience/>
+        </div>
       </AppContainer>
     );
   }

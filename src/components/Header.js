@@ -37,6 +37,7 @@ const AnimatedChevron = styled(IoIosArrowDown)`
   font-size: 48px;
   margin-top: 5%;
   animation: ${ChevronKeyFrames} 2s ease-in-out 0s infinite;
+  cursor: pointer;
 `
 
 function Header() {
