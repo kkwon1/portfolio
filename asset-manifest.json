@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0c0a77ae.chunk.css",
-    "main.js": "/portfolio/static/js/main.6f629ec2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.6f629ec2.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.c9297dcb.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c9297dcb.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.680679b4.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.680679b4.js.map",
-    "static/js/2.77b34f76.chunk.js": "/portfolio/static/js/2.77b34f76.chunk.js",
-    "static/js/2.77b34f76.chunk.js.map": "/portfolio/static/js/2.77b34f76.chunk.js.map",
+    "static/js/2.03288b2e.chunk.js": "/portfolio/static/js/2.03288b2e.chunk.js",
+    "static/js/2.03288b2e.chunk.js.map": "/portfolio/static/js/2.03288b2e.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.1df6d1419ec4475cc6b50ccaf9123cb5.js": "/portfolio/precache-manifest.1df6d1419ec4475cc6b50ccaf9123cb5.js",
+    "precache-manifest.6421a62ff674e6f5315a64782079dabb.js": "/portfolio/precache-manifest.6421a62ff674e6f5315a64782079dabb.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.0c0a77ae.chunk.css.map": "/portfolio/static/css/main.0c0a77ae.chunk.css.map",
-    "static/js/2.77b34f76.chunk.js.LICENSE": "/portfolio/static/js/2.77b34f76.chunk.js.LICENSE",
-    "static/media/hootsuite-logo.png": "/portfolio/static/media/hootsuite-logo.3d3445ab.png",
-    "static/media/orbis-logo.png": "/portfolio/static/media/orbis-logo.1f58b4a0.png",
+    "static/js/2.03288b2e.chunk.js.LICENSE": "/portfolio/static/js/2.03288b2e.chunk.js.LICENSE",
+    "static/media/hootsuite-logo.png": "/portfolio/static/media/hootsuite-logo.64c5353d.png",
+    "static/media/orbis-logo.png": "/portfolio/static/media/orbis-logo.a34a0d3a.png",
     "static/media/sap-logo.png": "/portfolio/static/media/sap-logo.57c9da05.png"
   },
   "entrypoints": [
     "static/js/runtime-main.680679b4.js",
-    "static/js/2.77b34f76.chunk.js",
+    "static/js/2.03288b2e.chunk.js",
     "static/css/main.0c0a77ae.chunk.css",
-    "static/js/main.6f629ec2.chunk.js"
+    "static/js/main.c9297dcb.chunk.js"
   ]
 }
