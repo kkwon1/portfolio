@@ -7,7 +7,7 @@ import Orbis from '../resources/orbis-logo.png';
 
 const ExperienceContainer = styled.div`
   text-align: center;
-  padding-left: 25vw;
+  padding-left: 20vw;
 `
 
 const ExperienceHeader = styled.div`
