@@ -8,7 +8,13 @@ import Experience from './components/Experience';
 import { Link , Events, scrollSpy } from 'react-scroll';
 
 const AppContainer = styled.div`
-  width: 100vw;
+  width: 100%;
+`
+
+const MainBodyContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 `
 
 class App extends React.Component {
@@ -38,15 +44,17 @@ class App extends React.Component {
             <ParticlesCanvas/>
           </Link>
         </div>
-        <div id="navbar">
-          <NavBar/>
-        </div>
-        <div id="about">
-          <About/>
-        </div>
-        <div id="experience">
-          <Experience/>
-        </div>
+        <MainBodyContainer>
+          <div id="navbar">
+            <NavBar/>
+          </div>
+          <div id="about">
+            <About/>
+          </div>
+          <div id="experience">
+            <Experience/>
+          </div>
+        </MainBodyContainer>
       </AppContainer>
     );
   }

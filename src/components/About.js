@@ -1,26 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
+import { IoIosRocket } from 'react-icons/io';
+import { FaDesktop, FaCode } from 'react-icons/fa';
+import { GiWindTurbine } from 'react-icons/gi';
 
 const AboutContainer = styled.div`
   text-align: center;
-  padding-left: 20vw;
-  height: 40vw;
+  padding-left: 20%;
+  height: 25%;
 `
 
 const AboutHeader = styled.div`
   font-size: 58px;
   text-align: left;
   margin-top: 5%;
-  width: 8vw;
+  width: 8%;
 `
 
-const AboutTextContainer = styled.div`
-  font-size: 24px;
+const AboutSectionContainer = styled.div`
+  font-size: 18px;
   text-align: left;
-  width: 50vw;
+  width: 40%;
   margin-top: 3%;
-  line-height: 2;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
 `
 
 const Link = styled.a`
@@ -32,18 +38,52 @@ const Link = styled.a`
   }
 `
 
+const IconContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 3%;
+`
+
+const CircleIcon = styled.div`
+  background: #FCCFAC;
+  font-size: 40px;
+  padding: 30px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10%;
+  align-items: center;
+  border-radius: 50%;
+`
+
 function About() {
   return(
     <AboutContainer>
       <Fade left>
         <AboutHeader>ABOUT</AboutHeader>
-        <AboutTextContainer>
+        <AboutSectionContainer>
           <p>
-            Driven by curiosity, I love working with large scale systems and problems. My interests lie in the environment
-            and education for people around the world. In my free time I'm a hobby astronomer, and practice mixed martial arts.
+            Driven by curiosity, I love working with large scale systems and problems. My interests lie in clean energy solutions
+            and accessible education. In my free time I'm a hobby astronomer, and practice mixed martial arts.
             Check out my resume <Link href="https://www.google.com" target="_blank">here!</Link>
           </p>
-        </AboutTextContainer>
+        </AboutSectionContainer>
+      </Fade>
+      <Fade bottom>
+        <IconContainer>
+          <CircleIcon>
+            <FaDesktop/>
+          </CircleIcon>
+          <CircleIcon>
+            <FaCode/>
+          </CircleIcon>
+          <CircleIcon>
+            <IoIosRocket/>
+          </CircleIcon>
+          <CircleIcon>
+            <GiWindTurbine/>
+          </CircleIcon>
+        </IconContainer>
       </Fade>
     </AboutContainer>
   )

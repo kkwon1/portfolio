@@ -22,8 +22,8 @@ const LinkItem = styled(Link)`
   text-align: center;
   display: flex;
   justify-content: center;
-  margin-left: 1vw;
-  margin-right: 2vw;
+  margin-left: 3%;
+  margin-right: 3%;
   cursor: pointer;
 `
 
@@ -48,7 +48,7 @@ class NavBar extends React.Component  {
   render() {
     return(
       <NavbarContainer>
-        <AppBar style={{backgroundColor: "#1F2336"}} position="static">
+        <AppBar style={{backgroundColor: "#1F2336", "border-bottom": "3px solid #FCCFAC"}} position="static">
           <Toolbar variant="dense">
             <LinkContainer>
               <LinkItem activeClass="active" to="about" spy={true} smooth="easeInOutQuad" duration={750}>
