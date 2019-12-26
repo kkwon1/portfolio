@@ -8,11 +8,14 @@ import { GiWindTurbine } from 'react-icons/gi';
 const AboutContainer = styled.div`
   text-align: center;
   padding-left: 20%;
-  height: 25%;
+  height: 30%;
+  margin-top: 5%;
+  margin-bottom: 10%;
 `
 
 const AboutHeader = styled.div`
-  font-size: 58px;
+  font-size: 54px;
+  font-weight: 200;
   text-align: left;
   margin-top: 5%;
   width: 8%;
@@ -21,7 +24,7 @@ const AboutHeader = styled.div`
 const AboutSectionContainer = styled.div`
   font-size: 18px;
   text-align: left;
-  width: 40%;
+  width: 50%;
   margin-top: 3%;
   line-height: 1.3;
   display: flex;
@@ -42,7 +45,9 @@ const IconContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: left;
-  margin-top: 3%;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-bottom: 5%;
 `
 
 const CircleIcon = styled.div`
@@ -65,7 +70,7 @@ function About() {
           <p>
             Driven by curiosity, I love working with large scale systems and problems. My interests lie in clean energy solutions
             and accessible education. In my free time I'm a hobby astronomer, and practice mixed martial arts.
-            Check out my resume <Link href="https://www.google.com" target="_blank">here!</Link>
+            Check out my resume <Link href="https://drive.google.com/open?id=13QPlXRPrkENTf5dDumsg2KJfK3Zir4OY" target="_blank">here!</Link>
           </p>
         </AboutSectionContainer>
       </Fade>

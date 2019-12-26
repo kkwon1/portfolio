@@ -9,6 +9,7 @@ import { Link , Events, scrollSpy } from 'react-scroll';
 
 const AppContainer = styled.div`
   width: 100%;
+  background: #F8F4F1;
 `
 
 const MainBodyContainer = styled.div`
