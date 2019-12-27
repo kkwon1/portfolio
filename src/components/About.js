@@ -8,9 +8,9 @@ import { GiWindTurbine } from 'react-icons/gi';
 const AboutContainer = styled.div`
   text-align: center;
   padding-left: 20%;
-  height: 30%;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  height: 100vh;
+  padding-top: 5%;
+  background: #FFF;
 `
 
 const AboutHeader = styled.div`
@@ -18,7 +18,6 @@ const AboutHeader = styled.div`
   font-weight: 200;
   text-align: left;
   margin-top: 5%;
-  width: 8%;
 `
 
 const AboutSectionContainer = styled.div`
