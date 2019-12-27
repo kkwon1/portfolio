@@ -8,7 +8,8 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 const ExperienceContainer = styled.div`
-  height: 95vw;
+  height: 100%;
+  padding-bottom: 100px;
 `
 
 const ExperienceHeaderContainer = styled.div`
