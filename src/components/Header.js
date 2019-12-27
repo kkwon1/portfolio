@@ -15,12 +15,12 @@ const HeaderContainer = styled.div`
 
 const Greeting = styled.div`
   font-weight: 300;
-  font-size: 75px;
+  font-size: 5vw;
 `
 
 const Occupation = styled.div`
   font-weight: 300;
-  font-size: 48px;
+  font-size: 2.5vw;
   margin: 10px;
 `
 

@@ -6,6 +6,7 @@ import SAP from '../resources/sap-logo.png';
 import Orbis from '../resources/orbis-logo.png';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { SkillContainer, SkillPill } from '../constants/Skills';
 
 const ExperienceContainer = styled.div`
   height: 100%;
@@ -52,24 +53,6 @@ const PositionTitle = styled.h4`
   font-weight: 600;
 `
 
-const SkillContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`
-
-const SkillBox = styled.h6`
-  font-size: 16px;
-  font-weight: 600;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
-  text-align: center;
-  background-color: #FCCFAC;
-  border-radius: 7%;
-  margin-right: 2%;
-`
-
 const experienceTextStyle = {"font-weight": "400", "margin-bottom": "2%"};
 const experienceItemContentStyle = { "box-shadow": "0px 0px 5px 0px rgba(0,0,0, 0.37)" };
 
@@ -108,13 +91,13 @@ function Experience() {
             Provisioned and integrated various AWS services required with the new service.
           </p>
           <SkillContainer>
-            <SkillBox>Scala</SkillBox>
-            <SkillBox>React</SkillBox>
-            <SkillBox>JavaScript</SkillBox>
-            <SkillBox>AWS</SkillBox>
-            <SkillBox>Terraform</SkillBox>
-            <SkillBox>Kubernetes</SkillBox>
-            <SkillBox>Docker</SkillBox>
+            <SkillPill>Scala</SkillPill>
+            <SkillPill>React</SkillPill>
+            <SkillPill>JavaScript</SkillPill>
+            <SkillPill>AWS</SkillPill>
+            <SkillPill>Terraform</SkillPill>
+            <SkillPill>Kubernetes</SkillPill>
+            <SkillPill>Docker</SkillPill>
           </SkillContainer>
         </ExperienceElement>
         <ExperienceElement
@@ -137,11 +120,11 @@ function Experience() {
             new API endpoints.
           </p>
           <SkillContainer>
-            <SkillBox>JavaScript</SkillBox>
-            <SkillBox>XSJS</SkillBox>
-            <SkillBox>SAPUI5</SkillBox>
-            <SkillBox>Java</SkillBox>
-            <SkillBox>SQL</SkillBox>
+            <SkillPill>JavaScript</SkillPill>
+            <SkillPill>XSJS</SkillPill>
+            <SkillPill>SAPUI5</SkillPill>
+            <SkillPill>Java</SkillPill>
+            <SkillPill>SQL</SkillPill>
           </SkillContainer>
         </ExperienceElement>
         <ExperienceElement
@@ -166,10 +149,10 @@ function Experience() {
             quarterly, or annual batches.
           </p>
           <SkillContainer>
-            <SkillBox>C#</SkillBox>
-            <SkillBox>Visual Basic</SkillBox>
-            <SkillBox>.NET</SkillBox>
-            <SkillBox>SQL</SkillBox>
+            <SkillPill>C#</SkillPill>
+            <SkillPill>Visual Basic</SkillPill>
+            <SkillPill>.NET</SkillPill>
+            <SkillPill>SQL</SkillPill>
           </SkillContainer>
         </ExperienceElement>
       </VerticalTimeline>
