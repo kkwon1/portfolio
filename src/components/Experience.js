@@ -20,7 +20,7 @@ const ExperienceHeaderContainer = styled.div`
 `
 
 const ExperienceHeader = styled.div`
-  font-size: 54px;
+  font-size: 6vh;
   font-weight: 200;
   text-align: left;
   margin-top: 5%;

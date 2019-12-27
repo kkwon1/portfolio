@@ -5,6 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 const HeaderContainer = styled.div`
   text-align: center;
   position: absolute;
+  width: 100vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -20,7 +21,7 @@ const Greeting = styled.div`
 
 const Occupation = styled.div`
   font-weight: 300;
-  font-size: 2.5vw;
+  font-size: 3vw;
   margin: 10px;
 `
 

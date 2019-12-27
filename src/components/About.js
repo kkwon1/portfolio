@@ -14,16 +14,16 @@ const AboutContainer = styled.div`
 `
 
 const AboutHeader = styled.div`
-  font-size: 54px;
+  font-size: 6vh;
   font-weight: 200;
   text-align: left;
   margin-top: 5%;
 `
 
 const AboutSectionContainer = styled.div`
-  font-size: 18px;
+  font-size: 2vh;
   text-align: left;
-  width: 50%;
+  width: 70%;
   margin-top: 3%;
   line-height: 1.3;
   display: flex;
@@ -56,6 +56,7 @@ const CircleIcon = styled.div`
   width: 40px;
   height: 40px;
   margin-right: 10%;
+  margin-top: 10%;
   align-items: center;
   border-radius: 50%;
 `
