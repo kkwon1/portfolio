@@ -14,6 +14,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
+### `yarn deploy`
+
+After making changes to the webpage, run this command to push the changes to the `gh-pages` branch and deploy a production
+build to the specified URL.
+
+
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
