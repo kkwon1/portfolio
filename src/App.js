@@ -6,6 +6,7 @@ import About from './components/About';
 import NavBar from './components/NavBar';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 import { Link , Events, scrollSpy } from 'react-scroll';
 
 const AppContainer = styled.div`
@@ -58,6 +59,9 @@ class App extends React.Component {
           </div>
           <div id="projects">
             <Projects/>
+          </div>
+          <div id="footer">
+            <Footer/>
           </div>
         </MainBodyContainer>
       </AppContainer>

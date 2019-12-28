@@ -60,7 +60,7 @@ class NavBar extends React.Component  {
               <LinkItem activeClass="active" to="projects" spy={true} smooth="easeInOutQuad" duration={750}>
                 Personal Projects
               </LinkItem>
-              <LinkItem>
+              <LinkItem activeClass="active" to="footer" spy={true} smooth="easeInOutQuad" duration={750}>
                 Contact
               </LinkItem>
             </LinkContainer>

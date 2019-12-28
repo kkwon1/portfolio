@@ -21,7 +21,7 @@ const AboutHeader = styled.div`
 `
 
 const AboutSectionContainer = styled.div`
-  font-size: 2vh;
+  font-size: 2.5vh;
   text-align: left;
   width: 70%;
   margin-top: 3%;

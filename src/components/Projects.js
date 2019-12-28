@@ -13,7 +13,8 @@ import { SkillContainer, SkillPill } from '../constants/Skills';
 const ProjectsContainer = styled.div`
   text-align: center;
   padding-left: 20%;
-  height: 100vh;
+  min-height: 100vh;
+  height: max-content;
   padding-top: 5%;
   background: #FFF;
 `
@@ -25,12 +26,13 @@ const ProjectsHeader = styled.div`
   margin-top: 5%;
 `
 
-const ProjectItemContainer = styled.div`
+const ProjectItemsContainer = styled.div`
   margin-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 60vw;
+  padding-bottom: 20vh;
 `
 
 const ProjectTitle = styled.h2`
@@ -44,69 +46,66 @@ const projectItemStyle = {
   "border-radius": "3px"
 };
 
-
-
-
 function Projects() {
   return(
-    <div>
-      <ProjectsContainer>
-        <Fade left>
-          <ProjectsHeader>PERSONAL PROJECTS</ProjectsHeader>
-          <ProjectItemContainer>
-            <ExpansionPanel style={projectItemStyle}>
-              <ExpansionPanelSummary
-                expandIcon={<IoIosArrowDown />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <ProjectTitle>
-                  <MdAndroid style={{"font-size": "36px", "margin-right": "2vw"}}/>
-                  Fridge Manager
-                </ProjectTitle>
-              </ExpansionPanelSummary>
-              <ExpansionPanelDetails>
-                <div style={{"display": "flex", "flex-direction": "column"}}>
-                  <Typography style={{"display": "flex", "text-align": "left"}}>
-                    An android app created to manage ingredients in your fridge. Backend server ran on an AWS EC2 instance
-                    using Express.js with MongoDB for data persistance. Users would be able to store ingredients,
-                    create grocery lists, share fridge with other family members. The android app was built using Java,
-                    making Http calls to the backend API.
-                  </Typography>
-                  <SkillContainer>
-                    <SkillPill>Java</SkillPill>
-                    <SkillPill>JavaScript</SkillPill>
-                    <SkillPill>MongoDB</SkillPill>
-                    <SkillPill>Express.js</SkillPill>
-                    <SkillPill>Android Dev</SkillPill>
-                    <SkillPill>MVP</SkillPill>
-                  </SkillContainer>
-                </div>
-              </ExpansionPanelDetails>
-            </ExpansionPanel>
+    <ProjectsContainer>
+      <Fade left>
+        <ProjectsHeader>PERSONAL PROJECTS</ProjectsHeader>
+        <ProjectItemsContainer>
 
-            <ExpansionPanel style={projectItemStyle}>
-              <ExpansionPanelSummary
-                expandIcon={<IoIosArrowDown />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <ProjectTitle>
-                  <FaLaptopCode style={{"font-size": "36px", "margin-right": "2vw"}}/>
-                  APOD Viewer
-                </ProjectTitle>
-              </ExpansionPanelSummary>
-              <ExpansionPanelDetails>
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                  sit amet blandit leo lobortis eget.
+          <ExpansionPanel style={projectItemStyle}>
+            <ExpansionPanelSummary
+              expandIcon={<IoIosArrowDown />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <ProjectTitle>
+                <MdAndroid style={{"font-size": "36px", "margin-right": "2vw"}}/>
+                Fridge Manager
+              </ProjectTitle>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <div style={{"display": "flex", "flex-direction": "column"}}>
+                <Typography style={{"display": "flex", "text-align": "left"}}>
+                  An android app created to manage ingredients in your fridge. Backend server ran on an AWS EC2 instance
+                  using Express.js with MongoDB for data persistance. Users would be able to store ingredients,
+                  create grocery lists, share fridge with other family members. The android app was built using Java,
+                  making Http calls to the backend API.
                 </Typography>
-              </ExpansionPanelDetails>
-            </ExpansionPanel>
-          </ProjectItemContainer>
-        </Fade>
-      </ProjectsContainer>
-    </div>
+                <SkillContainer>
+                  <SkillPill>Java</SkillPill>
+                  <SkillPill>JavaScript</SkillPill>
+                  <SkillPill>MongoDB</SkillPill>
+                  <SkillPill>Express.js</SkillPill>
+                  <SkillPill>Android Dev</SkillPill>
+                  <SkillPill>MVP</SkillPill>
+                </SkillContainer>
+              </div>
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+
+          <ExpansionPanel style={projectItemStyle}>
+            <ExpansionPanelSummary
+              expandIcon={<IoIosArrowDown />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <ProjectTitle>
+                <FaLaptopCode style={{"font-size": "36px", "margin-right": "2vw"}}/>
+                APOD Viewer
+              </ProjectTitle>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                sit amet blandit leo lobortis eget.
+              </Typography>
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+
+        </ProjectItemsContainer>
+      </Fade>
+    </ProjectsContainer>
   )
 }
 
