@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
+import Link from '../constants/Link'
 import { IoIosRocket } from 'react-icons/io';
 import { FaDesktop, FaCode } from 'react-icons/fa';
 import { GiWindTurbine } from 'react-icons/gi';
@@ -31,15 +32,6 @@ const AboutSectionContainer = styled.div`
   justify-content: space-between
 `
 
-const Link = styled.a`
-  color: #9A9A9A;
-  text-decoration: none;
-  transition: color 0.3s ease-out;
-  &:hover {
-    color: #265B88;
-  }
-`
-
 const IconContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -68,8 +60,10 @@ function About() {
         <AboutHeader>ABOUT</AboutHeader>
         <AboutSectionContainer>
           <p>
-            Driven by curiosity, I love working with large scale systems and problems. My interests lie in clean energy solutions
-            and accessible education. In my free time I'm a hobby astronomer, and practice mixed martial arts.
+            Hi! I'm a student at <Link href="https://www.ubc.ca/" target="_blank">UBC</Link> studying Computer Science and Physics.
+            Driven by curiosity, I love working with large scale systems and problems.
+            Some of my interests lie in clean energy solutions and accessible education through technology.
+            In my free time I'm a hobby astronomer, and practice mixed martial arts.
             Check out my resume <Link href="https://drive.google.com/open?id=13QPlXRPrkENTf5dDumsg2KJfK3Zir4OY" target="_blank">here!</Link>
           </p>
         </AboutSectionContainer>

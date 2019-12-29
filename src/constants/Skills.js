@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const SkillContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 3;
 `
 
 const SkillPill = styled.h6`

@@ -16,11 +16,16 @@ const IconsContainer = styled.div`
   margin-top: 2%;
   font-size: 6vh;
   display: flex;
+  align-items: center;
   justify-content: center;
 `
 
 const IconContainer = styled.div`
   margin-right: 1%;
+  transition: font-size 0.5s ease-out;
+  &:hover {
+    font-size: 7vh;
+  }
 `
 
 const CopyrightContainer = styled.p`
