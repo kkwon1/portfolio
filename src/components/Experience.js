@@ -7,6 +7,7 @@ import Orbis from '../resources/orbis-logo.png';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { SkillContainer, SkillPill } from '../constants/Skills';
+import device from '../constants/Device';
 
 const ExperienceContainer = styled.div`
   height: 100%;
@@ -15,15 +16,29 @@ const ExperienceContainer = styled.div`
 
 const ExperienceHeaderContainer = styled.div`
   text-align: center;
-  padding-left: 20%;
   padding-bottom: 5%;
+
+  @media ${device.mobileS} {
+    padding: 5%;
+  }
+
+  @media ${device.laptop} {
+    padding-left: 20%;
+  }
 `
 
 const ExperienceHeader = styled.div`
-  font-size: 6vh;
   font-weight: 200;
   text-align: left;
   margin-top: 5%;
+
+  @media ${device.mobileS} {
+    font-size: 28px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 54px;
+  }
 `
 
 const ExperienceElement = styled(VerticalTimelineElement)`
@@ -36,8 +51,15 @@ const ExperienceElement = styled(VerticalTimelineElement)`
 
 const ExperienceItemHeader = styled.div`
   display: flex;
-  font-size: 24px;
   align-items: center;
+
+  @media ${device.mobileS} {
+    font-size: 18px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 24px;
+  }
 `
 
 const CompanyLogo = styled.img`
@@ -51,9 +73,17 @@ const CompanyName = styled.h3`
 
 const PositionTitle = styled.h4`
   font-weight: 600;
+
+  @media ${device.mobileS} {
+    font-size: 14px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 18px;
+  }
 `
 
-const experienceTextStyle = {"font-weight": "400", "margin-bottom": "2%"};
+const experienceTextStyle = { "font-weight": "400", "margin-bottom": "2%" };
 const experienceItemContentStyle = { "box-shadow": "0px 0px 5px 0px rgba(0,0,0, 0.37)" };
 
 function Experience() {
@@ -86,7 +116,6 @@ function Experience() {
           <p style={experienceTextStyle}>
             Extended Hootsuite's video capabilities by allowing users to upload MOV video formats
             which now account for ~7% of total videos uploaded.
-            <br/>
             Designed and implemented a new Scala microservice for resolving video bitrate and resolution limitations.
             Provisioned and integrated various AWS services required with the new service.
           </p>
@@ -115,7 +144,7 @@ function Experience() {
           <PositionTitle>Software Developer Intern - Full Stack</PositionTitle>
           <p style={experienceTextStyle}>
             Worked on the SAP Analytics Cloud product as part of an infrastructure team.
-            <br/>Implemented an event-driven solution for recording file permission changes in the audit log.
+            Implemented an event-driven solution for recording file permission changes in the audit log.
             Improved file sharing and file permission inheritance workflow by creating new UI components and creating
             new API endpoints.
           </p>
@@ -142,7 +171,6 @@ function Experience() {
           <PositionTitle>Software Developer Intern</PositionTitle>
           <p style={experienceTextStyle}>
             Built software for client report generation with the Reporting Business team.
-            <br/>
             Worked with two report generators: Re-implemented a report generator for Australian clients originally
             using Visual Basic into C#.
             Added support for individual bespoke report generation that originally could only generate in monthly,

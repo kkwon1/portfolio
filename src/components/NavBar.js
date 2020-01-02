@@ -3,19 +3,35 @@ import styled from 'styled-components';
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar';
 import { Link , Events, scrollSpy } from 'react-scroll';
+import device from '../constants/Device';
 
 const NavbarContainer = styled.div`
   display: flex;
   justify-content: center;
   color: white;
   background-color: white;
+
+  @media ${device.mobileS} {
+    font-size: 14px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 18px;
+  }
 `
 
 const LinkContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 70%;
+
+  @media ${device.mobileS} {
+    width: 100%;
+  }
+
+  @media ${device.laptop} {
+    width: 70%;
+  }
 `
 
 const LinkItem = styled(Link)`

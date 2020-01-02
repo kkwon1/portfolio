@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components'
 import { IoIosArrowDown } from "react-icons/io";
+import device from '../constants/Device';
 
 const HeaderContainer = styled.div`
   text-align: center;
@@ -16,13 +17,27 @@ const HeaderContainer = styled.div`
 
 const Greeting = styled.div`
   font-weight: 300;
-  font-size: 5vw;
+
+  @media ${device.mobileS} {
+    font-size: 36px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 65px;
+  }
 `
 
 const Occupation = styled.div`
   font-weight: 300;
-  font-size: 3vw;
   margin: 10px;
+
+  @media ${device.mobileS} {
+    font-size: 28px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 48px;
+  }
 `
 
 const ChevronKeyFrames = keyframes`

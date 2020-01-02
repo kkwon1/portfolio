@@ -5,48 +5,78 @@ import Link from '../constants/Link'
 import { IoIosRocket } from 'react-icons/io';
 import { FaDesktop, FaCode } from 'react-icons/fa';
 import { GiWindTurbine } from 'react-icons/gi';
+import device from '../constants/Device';
 
 const AboutContainer = styled.div`
   text-align: center;
-  padding-left: 20%;
   height: 100vh;
   padding-top: 5%;
   background: #FFF;
+
+  @media ${device.mobileS} {
+    padding: 5%;
+  }
+
+  @media ${device.laptop} {
+    padding-left: 20%;
+  }
 `
 
 const AboutHeader = styled.div`
-  font-size: 6vh;
   font-weight: 200;
   text-align: left;
   margin-top: 5%;
+
+  @media ${device.mobileS} {
+    font-size: 28px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 54px;
+  }
 `
 
 const AboutSectionContainer = styled.div`
-  font-size: 2.5vh;
   text-align: left;
-  width: 70%;
   margin-top: 3%;
   line-height: 1.3;
   display: flex;
   flex-direction: row;
   justify-content: space-between
+
+  @media ${device.mobileS} {
+    font-size: 14px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 18px;
+    width: 70%;
+  }
 `
 
 const IconContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: left;
   flex-wrap: wrap;
   margin-top: 5%;
   margin-bottom: 5%;
+
+  @media ${device.mobileS} {
+    justify-content: center;
+    padding-left: 10%;
+  }
+
+  @media ${device.laptop} {
+    justify-content: left;
+  }
 `
 
 const CircleIcon = styled.div`
   background: #FCCFAC;
   font-size: 40px;
-  padding: 30px;
   width: 40px;
   height: 40px;
+  padding: 30px;
   margin-right: 10%;
   margin-top: 10%;
   align-items: center;
