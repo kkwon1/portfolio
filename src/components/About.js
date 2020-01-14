@@ -90,7 +90,8 @@ function About() {
         <AboutHeader>ABOUT</AboutHeader>
         <AboutSectionContainer>
           <p>
-            Hi! I'm a student at <Link href="https://www.ubc.ca/" target="_blank">UBC</Link> studying Computer Science and Physics.
+            Hi! I'm a student at <Link href="https://www.ubc.ca/" target="_blank">UBC</Link> studying
+            Computer Science and Physics expecting to graduate in May 2020.
             Driven by curiosity, I love working with large scale systems and problems.
             Some of my interests lie in clean energy solutions and accessible education through technology.
             In my free time I'm a hobby astronomer, and practice mixed martial arts.

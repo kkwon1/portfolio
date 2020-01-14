@@ -170,10 +170,10 @@ function Experience() {
           </ExperienceItemHeader>
           <PositionTitle>Software Developer Intern</PositionTitle>
           <p style={experienceTextStyle}>
-            Built software for client report generation with the Reporting Business team.
-            Worked with two report generators: Re-implemented a report generator for Australian clients originally
-            using Visual Basic into C#.
-            Added support for individual bespoke report generation that originally could only generate in monthly,
+            Built software for client report generation for the Reporting Business team.
+            Worked with two report generators: Re-implemented a report generator for Australian clients
+            from Visual Basic to C# and integrated with new services.
+            Added support for individual bespoke report generation. Originally it could only generate in monthly,
             quarterly, or annual batches.
           </p>
           <SkillContainer>
