@@ -95,7 +95,7 @@ function About() {
             Driven by curiosity, I love working with large scale systems and problems.
             Some of my interests lie in clean energy solutions and accessible education through technology.
             In my free time I'm a hobby astronomer, and practice mixed martial arts.
-            Check out my resume <Link href="https://drive.google.com/open?id=13QPlXRPrkENTf5dDumsg2KJfK3Zir4OY" target="_blank">here!</Link>
+            Check out my resume <Link href="https://drive.google.com/open?id=1EbZldfKTKcUkRmnKv1tQbpiVJOLL052E" target="_blank">here!</Link>
           </p>
         </AboutSectionContainer>
       </Fade>
