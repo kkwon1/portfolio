@@ -8,7 +8,10 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "acorn": "7.1.1",
     "gh-pages": "^2.1.1",
+    "kind-of": "6.0.3",
+    "minimist": "0.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-icons": "^3.8.0",
@@ -17,6 +20,7 @@
     "react-scripts": "3.3.0",
     "react-scroll": "^1.7.14",
     "react-vertical-timeline-component": "^2.5.0",
+    "serialize-javascript": "2.1.1",
     "styled-components": "^4.4.1"
   },
   "scripts": {
