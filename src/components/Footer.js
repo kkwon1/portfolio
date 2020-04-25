@@ -48,7 +48,7 @@ function Footer() {
           </a>
         </IconContainer>
         <IconContainer>
-          <a title="Resume" href="https://drive.google.com/open?id=13QPlXRPrkENTf5dDumsg2KJfK3Zir4OY" target="_blank" rel="noopener noreferrer" style={{color: "inherit"}}>
+          <a title="Resume" href="https://drive.google.com/open?id=1EbZldfKTKcUkRmnKv1tQbpiVJOLL052E" target="_blank" rel="noopener noreferrer" style={{color: "inherit"}}>
             <FiFileText/>
           </a>
         </IconContainer>
