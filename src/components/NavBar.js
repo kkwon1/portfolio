@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar';
-import { Link , Events, scrollSpy } from 'react-scroll';
-import device from '../constants/Device';
+import React from "react";
+import styled from "styled-components";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import { Link, Events, scrollSpy } from "react-scroll";
+import device from "../constants/Device";
 
 const NavbarContainer = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ const NavbarContainer = styled.div`
   @media ${device.laptop} {
     font-size: 18px;
   }
-`
+`;
 
 const LinkContainer = styled.div`
   display: flex;
@@ -32,7 +32,7 @@ const LinkContainer = styled.div`
   @media ${device.laptop} {
     width: 70%;
   }
-`
+`;
 
 const LinkItem = styled(Link)`
   text-align: center;
@@ -41,49 +41,79 @@ const LinkItem = styled(Link)`
   margin-left: 3%;
   margin-right: 3%;
   cursor: pointer;
-`
+`;
 
-class NavBar extends React.Component  {
+class NavBar extends React.Component {
   componentDidMount() {
-    Events.scrollEvent.register('begin', function(to, element) {
+    Events.scrollEvent.register("begin", function (to, element) {
       console.log("begin", arguments);
     });
- 
-    Events.scrollEvent.register('end', function(to, element) {
+
+    Events.scrollEvent.register("end", function (to, element) {
       console.log("end", arguments);
     });
- 
+
     scrollSpy.update();
   }
-  
+
   componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
+    Events.scrollEvent.remove("begin");
+    Events.scrollEvent.remove("end");
   }
 
   render() {
-    return(
+    return (
       <NavbarContainer>
-        <AppBar style={{backgroundColor: "#1F2336", "border-bottom": "3px solid #FCCFAC"}} position="static">
+        <AppBar
+          style={{
+            backgroundColor: "#1F2336",
+            borderBottom: "3px solid #FCCFAC",
+          }}
+          position="static"
+        >
           <Toolbar variant="dense">
             <LinkContainer>
-              <LinkItem activeClass="active" to="about" spy={true} smooth="easeInOutQuad" duration={750}>
+              <LinkItem
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth="easeInOutQuad"
+                duration={750}
+              >
                 About
               </LinkItem>
-              <LinkItem activeClass="active" to="experience" spy={true} smooth="easeInOutQuad" duration={750}>
+              <LinkItem
+                activeClass="active"
+                to="experience"
+                spy={true}
+                smooth="easeInOutQuad"
+                duration={750}
+              >
                 Experience
               </LinkItem>
-              <LinkItem activeClass="active" to="projects" spy={true} smooth="easeInOutQuad" duration={750}>
+              <LinkItem
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth="easeInOutQuad"
+                duration={750}
+              >
                 Personal Projects
               </LinkItem>
-              <LinkItem activeClass="active" to="footer" spy={true} smooth="easeInOutQuad" duration={750}>
+              <LinkItem
+                activeClass="active"
+                to="footer"
+                spy={true}
+                smooth="easeInOutQuad"
+                duration={750}
+              >
                 Contact
               </LinkItem>
             </LinkContainer>
           </Toolbar>
         </AppBar>
       </NavbarContainer>
-    )
+    );
   }
 }
 
