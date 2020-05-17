@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import Link from "../constants/Link";
@@ -81,9 +81,9 @@ const CircleIcon = styled.div`
   border-radius: 50%;
 `;
 
-function About() {
+const About = forwardRef((props, ref) => {
   return (
-    <AboutContainer>
+    <AboutContainer ref={ref}>
       <Fade left>
         <AboutHeader>ABOUT</AboutHeader>
         <AboutSectionContainer>
@@ -124,6 +124,6 @@ function About() {
       </Fade>
     </AboutContainer>
   );
-}
+});
 
 export default About;
