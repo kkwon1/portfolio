@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.0c0a77ae.chunk.css",
-    "main.js": "/static/js/main.231bce20.chunk.js",
-    "main.js.map": "/static/js/main.231bce20.chunk.js.map",
+    "main.js": "/static/js/main.e49fb32d.chunk.js",
+    "main.js.map": "/static/js/main.e49fb32d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.17a0efde.js",
     "runtime-main.js.map": "/static/js/runtime-main.17a0efde.js.map",
     "static/css/2.a641e29a.chunk.css": "/static/css/2.a641e29a.chunk.css",
-    "static/js/2.110b6b93.chunk.js": "/static/js/2.110b6b93.chunk.js",
-    "static/js/2.110b6b93.chunk.js.map": "/static/js/2.110b6b93.chunk.js.map",
+    "static/js/2.fb6c29c1.chunk.js": "/static/js/2.fb6c29c1.chunk.js",
+    "static/js/2.fb6c29c1.chunk.js.map": "/static/js/2.fb6c29c1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.77832c476ef1ade900cd736f5d9c89b2.js": "/precache-manifest.77832c476ef1ade900cd736f5d9c89b2.js",
+    "precache-manifest.36e3f7269491c9dfb28bdf8a9f35645f.js": "/precache-manifest.36e3f7269491c9dfb28bdf8a9f35645f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.a641e29a.chunk.css.map": "/static/css/2.a641e29a.chunk.css.map",
     "static/css/main.0c0a77ae.chunk.css.map": "/static/css/main.0c0a77ae.chunk.css.map",
-    "static/js/2.110b6b93.chunk.js.LICENSE.txt": "/static/js/2.110b6b93.chunk.js.LICENSE.txt",
+    "static/js/2.fb6c29c1.chunk.js.LICENSE.txt": "/static/js/2.fb6c29c1.chunk.js.LICENSE.txt",
     "static/media/hootsuite-logo.png": "/static/media/hootsuite-logo.64c5353d.png",
     "static/media/orbis-logo.png": "/static/media/orbis-logo.a34a0d3a.png",
     "static/media/sap-logo.png": "/static/media/sap-logo.57c9da05.png"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.17a0efde.js",
     "static/css/2.a641e29a.chunk.css",
-    "static/js/2.110b6b93.chunk.js",
+    "static/js/2.fb6c29c1.chunk.js",
     "static/css/main.0c0a77ae.chunk.css",
-    "static/js/main.231bce20.chunk.js"
+    "static/js/main.e49fb32d.chunk.js"
   ]
 }
