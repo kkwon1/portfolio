@@ -66,6 +66,7 @@ const SourceMenu = forwardRef((props, ref) => {
         <Popper
           open={open}
           anchorEl={ref.current}
+          placement={"bottom-end"}
           role={undefined}
           transition
           disablePortal

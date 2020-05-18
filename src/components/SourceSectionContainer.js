@@ -11,7 +11,6 @@ const Container = styled.div`
   @media ${device.mobileS} {
     font-size: 11px;
     width: 25%;
-    margin-right: 0.75rem;
     justify-content: center;
   }
 
