@@ -10,6 +10,7 @@ import { MdAndroid } from "react-icons/md";
 import { FaLaptopCode } from "react-icons/fa";
 import { SkillContainer, SkillPill } from "../constants/Skills";
 import device from "../constants/Device";
+import SourceSectionContainer from "./SourceSectionContainer";
 
 const ProjectsContainer = styled.div`
   text-align: center;
@@ -110,24 +111,6 @@ const ProjectText = styled.p`
   }
 `;
 
-const SourceSectionContainer = styled.div`
-  display: flex;
-  flex-grow: 2;
-`;
-
-const SourceSection = styled.div`
-  text-align: center;
-
-  @media ${device.mobileS} {
-    font-size: 11px;
-  }
-
-  @media ${device.laptop} {
-    flex-grow: 1;
-    font-size: 16px;
-  }
-`;
-
 const ProjectLink = styled(Link)`
   @media ${device.mobileS} {
     font-size: 14px;
@@ -144,7 +127,7 @@ const projectItemStyle = {
   borderRadius: "3px",
 };
 
-function Projects() {
+const Projects = () => {
   return (
     <ProjectsContainer>
       <Fade left>
@@ -193,30 +176,17 @@ function Projects() {
                   <SkillContainer>
                     <SkillPill>React</SkillPill>
                     <SkillPill>Golang</SkillPill>
-                    <SkillPill>Docker</SkillPill>
-                    <SkillPill>Heroku</SkillPill>
-                    <SkillPill>Firebase</SkillPill>
                     <SkillPill>MongoDB Atlas</SkillPill>
+                    <SkillPill>Docker</SkillPill>
                     <SkillPill>Web App</SkillPill>
+                    <SkillPill>Firebase</SkillPill>
+                    <SkillPill>Heroku</SkillPill>
                   </SkillContainer>
-                  <SourceSectionContainer>
-                    <SourceSection>
-                      <Link
-                        href="https://github.com/kkwon1/APODViewer"
-                        target="_blank"
-                      >
-                        [Web App]
-                      </Link>
-                    </SourceSection>
-                    <SourceSection>
-                      <Link
-                        href="https://github.com/kkwon1/APODViewerService"
-                        target="_blank"
-                      >
-                        [Backend Server]
-                      </Link>
-                    </SourceSection>
-                  </SourceSectionContainer>
+                  <SourceSectionContainer
+                    hasMultiple={true}
+                    frontendUrl={"https://github.com/kkwon1/APODViewer"}
+                    backendUrl={"https://github.com/kkwon1/APODViewerService"}
+                  />
                 </BottomRowContainer>
               </ProjectInfoContainer>
             </ExpansionPanelDetails>
@@ -250,16 +220,9 @@ function Projects() {
                     <SkillPill>HTML</SkillPill>
                     <SkillPill>CSS</SkillPill>
                   </SkillContainer>
-                  <SourceSectionContainer>
-                    <SourceSection>
-                      <Link
-                        href="https://github.com/kkwon1/portfolio"
-                        target="_blank"
-                      >
-                        [Source Code]
-                      </Link>
-                    </SourceSection>
-                  </SourceSectionContainer>
+                  <SourceSectionContainer
+                    srcUrl={"https://github.com/kkwon1/portfolio"}
+                  />
                 </BottomRowContainer>
               </ProjectInfoContainer>
             </ExpansionPanelDetails>
@@ -297,24 +260,15 @@ function Projects() {
                     <SkillPill>Android App</SkillPill>
                     <SkillPill>MVP</SkillPill>
                   </SkillContainer>
-                  <SourceSectionContainer>
-                    <SourceSection>
-                      <Link
-                        href="https://github.com/ericjang96/fridge-manager-android"
-                        target="_blank"
-                      >
-                        [Android App]
-                      </Link>
-                    </SourceSection>
-                    <SourceSection>
-                      <Link
-                        href="https://github.com/ericjang96/fridge-manager-android"
-                        target="_blank"
-                      >
-                        [Backend Server]
-                      </Link>
-                    </SourceSection>
-                  </SourceSectionContainer>
+                  <SourceSectionContainer
+                    hasMultiple={true}
+                    frontendUrl={
+                      "https://github.com/ericjang96/fridge-manager-android"
+                    }
+                    backendUrl={
+                      "https://github.com/ericjang96/fridge-manager-backend"
+                    }
+                  />
                 </BottomRowContainer>
               </ProjectInfoContainer>
             </ExpansionPanelDetails>
@@ -323,6 +277,6 @@ function Projects() {
       </Fade>
     </ProjectsContainer>
   );
-}
+};
 
 export default Projects;

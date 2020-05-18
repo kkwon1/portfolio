@@ -117,7 +117,7 @@ const NewAbout = forwardRef((props, ref) => {
         <AboutHeaderText>
           <AboutHeader>Kevin Kwon</AboutHeader>
           <AboutSectionContainer>
-            <p>
+            <span>
               Hi! I'm a student at{" "}
               <Link href="https://www.ubc.ca/" target="_blank">
                 UBC
@@ -136,7 +136,7 @@ const NewAbout = forwardRef((props, ref) => {
                   here!
                 </Link>
               </ResumeText>
-            </p>
+            </span>
           </AboutSectionContainer>
         </AboutHeaderText>
       </Fade>
