@@ -112,18 +112,20 @@ const ProjectText = styled.p`
 
 const SourceSectionContainer = styled.div`
   display: flex;
-  flex-grow: 2;
+  width: 30%;
+  justify-content: flex-end;
+  margin-top: 1%;
 `;
 
 const SourceSection = styled.div`
   text-align: center;
+  margin-right: 3rem;
 
   @media ${device.mobileS} {
     font-size: 11px;
   }
 
   @media ${device.laptop} {
-    flex-grow: 1;
     font-size: 16px;
   }
 `;
