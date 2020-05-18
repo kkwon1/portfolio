@@ -72,7 +72,7 @@ const AboutHeader = styled.div`
 
   @media ${device.laptop} {
     font-size: 54px;
-    width: 300px;
+    width: 400px;
   }
 `;
 
@@ -92,7 +92,7 @@ const AboutSectionContainer = styled.div`
 
   @media ${device.laptop} {
     font-size: 18px;
-    width: 300px;
+    width: 400px;
   }
 `;
 
