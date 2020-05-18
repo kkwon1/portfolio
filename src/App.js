@@ -39,7 +39,7 @@ const App = () => {
 
   return (
     <AppContainer>
-      <div>
+      <div style={{ cursor: "pointer" }}>
         <Link
           activeClass="active"
           to="navbar"
