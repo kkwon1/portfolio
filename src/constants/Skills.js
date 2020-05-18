@@ -5,7 +5,14 @@ const SkillContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  width: 70%;
+
+  @media ${device.mobileS} {
+    width: 90%;
+  }
+
+  @media ${device.laptop} {
+    width: 70%;
+  }
 `;
 
 const SkillPill = styled.div`
