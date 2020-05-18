@@ -176,11 +176,11 @@ const Projects = () => {
                   <SkillContainer>
                     <SkillPill>React</SkillPill>
                     <SkillPill>Golang</SkillPill>
-                    <SkillPill>MongoDB Atlas</SkillPill>
                     <SkillPill>Docker</SkillPill>
                     <SkillPill>Web App</SkillPill>
                     <SkillPill>Firebase</SkillPill>
                     <SkillPill>Heroku</SkillPill>
+                    <SkillPill>MongoDB Atlas</SkillPill>
                   </SkillContainer>
                   <SourceSectionContainer
                     hasMultiple={true}

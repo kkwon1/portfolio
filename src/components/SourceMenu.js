@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef, forwardRef } from "react";
 import Link from "../constants/Link";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
-import Grow from "@material-ui/core/Grow";
 import Paper from "@material-ui/core/Paper";
 import Popper from "@material-ui/core/Popper";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -12,9 +11,6 @@ import SourceSection from "../constants/SourceSection";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-  },
-  paper: {
-    marginRight: theme.spacing(2),
   },
 }));
 
@@ -66,47 +62,39 @@ const SourceMenu = forwardRef((props, ref) => {
         <Popper
           open={open}
           anchorEl={ref.current}
-          placement={"bottom-end"}
+          placement={"bottom"}
           role={undefined}
           transition
           disablePortal
-          style={{ zIndex: 100 }}
+          style={{ zIndex: 1 }}
         >
           {({ TransitionProps, placement }) => (
-            <Grow
-              {...TransitionProps}
-              style={{
-                transformOrigin:
-                  placement === "bottom" ? "center top" : "center bottom",
-              }}
-            >
-              <Paper>
-                <ClickAwayListener onClickAway={handleClose}>
-                  <MenuList autoFocusItem={open} id="menu-list-grow">
-                    <MenuItem onClick={handleClose}>
-                      <Link
-                        href={frontendUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ color: "black" }}
-                      >
-                        Front-end
-                      </Link>
-                    </MenuItem>
-                    <MenuItem onClick={handleClose}>
-                      <Link
-                        href={backendUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ color: "black" }}
-                      >
-                        Back-end
-                      </Link>
-                    </MenuItem>
-                  </MenuList>
-                </ClickAwayListener>
-              </Paper>
-            </Grow>
+            <Paper>
+              <ClickAwayListener onClickAway={handleClose}>
+                <MenuList id="menu-list-grow">
+                  <MenuItem onClick={handleClose}>
+                    <Link
+                      href={frontendUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "black" }}
+                    >
+                      Front-end
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <Link
+                      href={backendUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "black" }}
+                    >
+                      Back-end
+                    </Link>
+                  </MenuItem>
+                </MenuList>
+              </ClickAwayListener>
+            </Paper>
           )}
         </Popper>
       </div>
