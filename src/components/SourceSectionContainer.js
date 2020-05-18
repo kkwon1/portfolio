@@ -7,17 +7,18 @@ import Link from "../constants/Link";
 
 const Container = styled.div`
   display: flex;
-  justify-content: flex-end;
   margin-top: 1%;
   @media ${device.mobileS} {
     font-size: 11px;
     width: 25%;
+    justify-content: center;
   }
 
   @media ${device.laptop} {
     font-size: 16px;
     width: 30%;
     margin-right: 3rem;
+    justify-content: flex-end;
   }
 `;
 
