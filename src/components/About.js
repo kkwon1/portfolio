@@ -118,19 +118,20 @@ const NewAbout = forwardRef((props, ref) => {
           <AboutHeader>Kevin Kwon</AboutHeader>
           <AboutSectionContainer>
             <span>
-              Hi! I'm a student at{" "}
-              <Link href="https://www.ubc.ca/" target="_blank">
-                UBC
-              </Link>{" "}
-              studying Computer Science and Physics expecting to graduate in May
-              2020. Driven by curiosity, I love working with large scale systems
-              and problems. Some of my interests lie in clean energy solutions
-              and accessible education through technology. In my free time I'm a
+              Hi! I'm a Software Developer at{" "}
+              <Link href="https://www.amazon.com/" target="_blank">
+                Amazon
+              </Link>
+              .
+              <br />
+              Driven by curiosity, I love working with large scale systems and
+              problems. Some of my interests lie in clean energy solutions and
+              accessible education through technology. In my free time I'm a
               hobby astronomer, and practice mixed martial arts.
               <ResumeText>
                 Check out my resume{" "}
                 <Link
-                  href="https://drive.google.com/open?id=1D03pdCnWTMLHV3RPtfgkaoGIZWqyFilW"
+                  href="https://drive.google.com/file/d/1rm7DRayTcPQ35btpiL_M5REbKJHJ8bCd/view?usp=sharing"
                   target="_blank"
                 >
                   here!
