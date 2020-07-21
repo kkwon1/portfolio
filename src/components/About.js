@@ -86,7 +86,7 @@ const AboutSectionContainer = styled.div`
 
   @media ${device.mobileS} {
     font-size: 15px;
-    width: 70%;
+    width: 80%;
     justify-content: center;
   }
 

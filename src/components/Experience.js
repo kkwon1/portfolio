@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import Amazon from "../resources/amazon-icon.svg";
 import Hootsuite from "../resources/hootsuite-logo.png";
 import SAP from "../resources/sap-logo.png";
 import Orbis from "../resources/orbis-logo.png";
@@ -102,6 +103,25 @@ function Experience() {
 
       <VerticalTimeline layout="1-column">
         <ExperienceElement
+          date="July 2020 - Present"
+          iconStyle={{ background: "#FCCFAC" }}
+          contentStyle={experienceItemContentStyle}
+          contentArrowStyle={{ display: "none" }}
+        >
+          <ExperienceItemHeader>
+            <CompanyLogo
+              style={{ width: "40px", height: "40px" }}
+              src={Amazon}
+              alt="Amazon"
+            ></CompanyLogo>
+            <CompanyName>Amazon</CompanyName>
+          </ExperienceItemHeader>
+          <PositionTitle>Software Development Engineer</PositionTitle>
+          <p style={experienceTextStyle}></p>
+          <SkillContainer></SkillContainer>
+        </ExperienceElement>
+
+        <ExperienceElement
           date="May 2019 - Dec 2019"
           iconStyle={{ background: "#FCCFAC" }}
           contentStyle={experienceItemContentStyle}
@@ -133,6 +153,7 @@ function Experience() {
             <SkillPill>Docker</SkillPill>
           </SkillContainer>
         </ExperienceElement>
+
         <ExperienceElement
           date="Sep 2018 - Apr 2019"
           iconStyle={{ background: "#FCCFAC" }}
@@ -163,6 +184,7 @@ function Experience() {
             <SkillPill>SQL</SkillPill>
           </SkillContainer>
         </ExperienceElement>
+
         <ExperienceElement
           date="Jan 2018 - Apr 2018"
           iconStyle={{ background: "#FCCFAC" }}
