@@ -21,3 +21,7 @@ You will also see any lint errors in the console.
 
 After making changes to the webpage, run this command to push the changes to the `gh-pages` branch and deploy a production
 build to the specified URL.
+
+### `yarn upgrade`
+
+Upgrades all the dependencies you have

@@ -117,8 +117,17 @@ function Experience() {
             <CompanyName>Amazon</CompanyName>
           </ExperienceItemHeader>
           <PositionTitle>Software Development Engineer</PositionTitle>
-          <p style={experienceTextStyle}></p>
-          <SkillContainer></SkillContainer>
+          <p style={experienceTextStyle}>
+            Currently working within the Amazon Tax Organization. Working across
+            multiple teams to build and design systems that consume and analyze
+            data from over 1 billion transactions per day. To handle the high
+            volume of traffic, we are always considering scalability,
+            availability and resiliency in our systems.
+          </p>
+          <SkillContainer>
+            <SkillPill>Java</SkillPill>
+            <SkillPill>AWS</SkillPill>
+          </SkillContainer>
         </ExperienceElement>
 
         <ExperienceElement

@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import ExpansionPanel from "@material-ui/core/ExpansionPanel";
-import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
-import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import {
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+} from "@material-ui/core";
 import Link from "../constants/Link";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdAndroid } from "react-icons/md";
@@ -133,8 +135,8 @@ const Projects = () => {
       <Fade left>
         <ProjectsHeader>PERSONAL PROJECTS</ProjectsHeader>
         <ProjectItemsContainer>
-          <ExpansionPanel style={projectItemStyle}>
-            <ExpansionPanelSummary
+          <Accordion style={projectItemStyle}>
+            <AccordionSummary
               expandIcon={<IoIosArrowDown />}
               aria-controls="panel1a-content"
               id="panel1a-header"
@@ -145,8 +147,8 @@ const Projects = () => {
                 </IconContainer>
                 APOD Viewer
               </ProjectTitle>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
+            </AccordionSummary>
+            <AccordionDetails>
               <ProjectInfoContainer>
                 <ProjectLink
                   href="https://apodviewer.herokuapp.com"
@@ -189,11 +191,11 @@ const Projects = () => {
                   />
                 </BottomRowContainer>
               </ProjectInfoContainer>
-            </ExpansionPanelDetails>
-          </ExpansionPanel>
+            </AccordionDetails>
+          </Accordion>
 
-          <ExpansionPanel style={projectItemStyle}>
-            <ExpansionPanelSummary
+          <Accordion style={projectItemStyle}>
+            <AccordionSummary
               expandIcon={<IoIosArrowDown />}
               aria-controls="panel1a-content"
               id="panel1a-header"
@@ -204,8 +206,8 @@ const Projects = () => {
                 </IconContainer>
                 Portfolio
               </ProjectTitle>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
+            </AccordionSummary>
+            <AccordionDetails>
               <ProjectInfoContainer>
                 <ProjectText>
                   A personal webpage I have created using React. I wanted to
@@ -225,11 +227,11 @@ const Projects = () => {
                   />
                 </BottomRowContainer>
               </ProjectInfoContainer>
-            </ExpansionPanelDetails>
-          </ExpansionPanel>
+            </AccordionDetails>
+          </Accordion>
 
-          <ExpansionPanel style={projectItemStyle}>
-            <ExpansionPanelSummary
+          <Accordion style={projectItemStyle}>
+            <AccordionSummary
               expandIcon={<IoIosArrowDown />}
               aria-controls="panel1a-content"
               id="panel1a-header"
@@ -240,8 +242,8 @@ const Projects = () => {
                 </IconContainer>
                 Fridge Manager
               </ProjectTitle>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
+            </AccordionSummary>
+            <AccordionDetails>
               <ProjectInfoContainer>
                 <ProjectText>
                   An android app created to manage ingredients in your fridge.
@@ -271,8 +273,8 @@ const Projects = () => {
                   />
                 </BottomRowContainer>
               </ProjectInfoContainer>
-            </ExpansionPanelDetails>
-          </ExpansionPanel>
+            </AccordionDetails>
+          </Accordion>
         </ProjectItemsContainer>
       </Fade>
     </ProjectsContainer>
