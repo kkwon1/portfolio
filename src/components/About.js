@@ -127,7 +127,7 @@ const NewAbout = forwardRef((props, ref) => {
               Driven by curiosity, I love working with large scale systems and
               problems. Some of my interests lie in clean energy solutions and
               accessible education through technology. In my free time I'm a
-              hobby astronomer, and practice mixed martial arts.
+              hobby astronomer, and like to go climbing.
               <ResumeText>
                 Check out my resume{" "}
                 <Link
