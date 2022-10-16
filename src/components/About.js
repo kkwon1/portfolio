@@ -131,7 +131,7 @@ const NewAbout = forwardRef((props, ref) => {
               <ResumeText>
                 Check out my resume{" "}
                 <Link
-                  href="https://drive.google.com/file/d/1rm7DRayTcPQ35btpiL_M5REbKJHJ8bCd/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1faE-55hOSf6nV9K72t8V-n4686OHZ2d8/view?usp=sharing"
                   target="_blank"
                 >
                   here!

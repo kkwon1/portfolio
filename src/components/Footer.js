@@ -61,7 +61,7 @@ function Footer() {
         <IconContainer>
           <a
             title="Resume"
-            href="https://drive.google.com/file/d/1rm7DRayTcPQ35btpiL_M5REbKJHJ8bCd/view?usp=sharing"
+            href="https://drive.google.com/file/d/1faE-55hOSf6nV9K72t8V-n4686OHZ2d8/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "inherit" }}
@@ -81,7 +81,7 @@ function Footer() {
           </a>
         </IconContainer>
       </IconsContainer>
-      <CopyrightContainer> Kevin Kwon &copy; 2021</CopyrightContainer>
+      <CopyrightContainer> Kevin Kwon &copy; 2022</CopyrightContainer>
     </FooterContainer>
   );
 }
