@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.0c0a77ae.chunk.css",
-    "main.js": "/static/js/main.059ed89c.chunk.js",
-    "main.js.map": "/static/js/main.059ed89c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
-    "static/css/2.8242508b.chunk.css": "/static/css/2.8242508b.chunk.css",
-    "static/js/2.86d9c776.chunk.js": "/static/js/2.86d9c776.chunk.js",
-    "static/js/2.86d9c776.chunk.js.map": "/static/js/2.86d9c776.chunk.js.map",
+    "main.js": "/static/js/main.56b2a591.chunk.js",
+    "main.js.map": "/static/js/main.56b2a591.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.351e9c47.js",
+    "runtime-main.js.map": "/static/js/runtime-main.351e9c47.js.map",
+    "static/css/2.a641e29a.chunk.css": "/static/css/2.a641e29a.chunk.css",
+    "static/js/2.9f09046d.chunk.js": "/static/js/2.9f09046d.chunk.js",
+    "static/js/2.9f09046d.chunk.js.map": "/static/js/2.9f09046d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ea9267a741c0157ba3f34f8f7e091533.js": "/precache-manifest.ea9267a741c0157ba3f34f8f7e091533.js",
+    "precache-manifest.e50477f5ff8bee72608fe517c9aaaae0.js": "/precache-manifest.e50477f5ff8bee72608fe517c9aaaae0.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.8242508b.chunk.css.map": "/static/css/2.8242508b.chunk.css.map",
+    "static/css/2.a641e29a.chunk.css.map": "/static/css/2.a641e29a.chunk.css.map",
     "static/css/main.0c0a77ae.chunk.css.map": "/static/css/main.0c0a77ae.chunk.css.map",
-    "static/js/2.86d9c776.chunk.js.LICENSE.txt": "/static/js/2.86d9c776.chunk.js.LICENSE.txt",
+    "static/js/2.9f09046d.chunk.js.LICENSE.txt": "/static/js/2.9f09046d.chunk.js.LICENSE.txt",
     "static/media/amazon-icon.svg": "/static/media/amazon-icon.fea38bbf.svg",
     "static/media/hootsuite-logo.png": "/static/media/hootsuite-logo.64c5353d.png",
     "static/media/kevin_profile.jpg": "/static/media/kevin_profile.a98b9c97.jpg",
@@ -21,10 +21,10 @@
     "static/media/sap-logo.png": "/static/media/sap-logo.57c9da05.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.19ccc7f6.js",
-    "static/css/2.8242508b.chunk.css",
-    "static/js/2.86d9c776.chunk.js",
+    "static/js/runtime-main.351e9c47.js",
+    "static/css/2.a641e29a.chunk.css",
+    "static/js/2.9f09046d.chunk.js",
     "static/css/main.0c0a77ae.chunk.css",
-    "static/js/main.059ed89c.chunk.js"
+    "static/js/main.56b2a591.chunk.js"
   ]
 }
