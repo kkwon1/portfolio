@@ -119,19 +119,19 @@ const NewAbout = forwardRef((props, ref) => {
           <AboutSectionContainer>
             <span>
               Hi! I'm a Software Developer at{" "}
-              <Link href="https://www.amazon.com/" target="_blank">
-                Amazon
+              <Link href="https://aws.amazon.com/" target="_blank">
+                AWS
               </Link>
               .
               <br />
               Driven by curiosity, I love working with large scale systems and
-              problems. Some of my interests lie in clean energy solutions and
-              accessible education through technology. In my free time I'm a
-              hobby astronomer, and like to go climbing.
+              problems. Some of my interests lie in the intersection between
+              sustainability and technology. In my free time I'm a hobby
+              astronomer, and like to go climbing.
               <ResumeText>
                 Check out my resume{" "}
                 <Link
-                  href="https://drive.google.com/file/d/1faE-55hOSf6nV9K72t8V-n4686OHZ2d8/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1WJL6JMRYZ3zIFpN9EmlhLyo2I2fwTPR4/view?usp=share_link"
                   target="_blank"
                 >
                   here!

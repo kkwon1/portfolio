@@ -145,7 +145,7 @@ const Projects = () => {
                 <IconContainer>
                   <FaLaptopCode />
                 </IconContainer>
-                APOD Viewer
+                APOD Forum
               </ProjectTitle>
             </AccordionSummary>
             <AccordionDetails>
@@ -157,8 +157,12 @@ const Projects = () => {
                   Check out the application here!
                 </ProjectLink>
                 <ProjectText>
-                  A web-application that allows users to navigate through
-                  Astronomy Pictures of the Day (APOD), with improved UI and UX
+                  A{" "}
+                  <Link href="https://lobste.rs/" target="_blank">
+                    Lobste.rs
+                  </Link>{" "}
+                  clone that allows users to browse NASA Astronomy Pictures of
+                  the Day (APOD) in a forum. Provides an improved UI and UX
                   compared to the{" "}
                   <Link
                     href="https://apod.nasa.gov/apod/astropix.html"
@@ -166,9 +170,8 @@ const Projects = () => {
                   >
                     official website
                   </Link>
-                  . The application allows user creation, liking and saving
-                  images, and browsing in a grid view in the main page. The
-                  project was built using{" "}
+                  . The application allows users to sign up to comment, upvote
+                  and like posts. The project was built using{" "}
                   <Link href="https://api.nasa.gov/" target="_blank">
                     NASA's open API
                   </Link>
@@ -177,17 +180,18 @@ const Projects = () => {
                 <BottomRowContainer>
                   <SkillContainer>
                     <SkillPill>React</SkillPill>
-                    <SkillPill>Golang</SkillPill>
+                    <SkillPill>Java</SkillPill>
                     <SkillPill>Docker</SkillPill>
-                    <SkillPill>Web App</SkillPill>
-                    <SkillPill>Firebase</SkillPill>
+                    <SkillPill>Auth0</SkillPill>
                     <SkillPill>Heroku</SkillPill>
-                    <SkillPill>MongoDB Atlas</SkillPill>
+                    <SkillPill>MongoDB</SkillPill>
                   </SkillContainer>
                   <SourceSectionContainer
                     hasMultiple={true}
-                    frontendUrl={"https://github.com/kkwon1/APODViewer"}
-                    backendUrl={"https://github.com/kkwon1/APODViewerService"}
+                    frontendUrl={
+                      "https://github.com/kkwon1/apod-forum-frontend"
+                    }
+                    backendUrl={"https://github.com/kkwon1/ApodForumBackend"}
                   />
                 </BottomRowContainer>
               </ProjectInfoContainer>

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import Amazon from "../resources/amazon-icon.svg";
+import AWS from "../resources/aws-logo.png";
 import Hootsuite from "../resources/hootsuite-logo.png";
 import SAP from "../resources/sap-logo.png";
 import Orbis from "../resources/orbis-logo.png";
@@ -12,6 +13,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { SkillContainer, SkillPill } from "../constants/Skills";
 import device from "../constants/Device";
+import Link from "../constants/Link";
 
 const ExperienceContainer = styled.div`
   height: 100%;
@@ -103,7 +105,45 @@ function Experience() {
 
       <VerticalTimeline layout="1-column">
         <ExperienceElement
-          date="July 2020 - Present"
+          date="Aug 2021 - Present"
+          iconStyle={{ background: "#FCCFAC" }}
+          contentStyle={experienceItemContentStyle}
+          contentArrowStyle={{ display: "none" }}
+        >
+          <ExperienceItemHeader>
+            <CompanyLogo
+              style={{ width: "48px", height: "30px" }}
+              src={AWS}
+              alt="AWS"
+            ></CompanyLogo>
+            <CompanyName>AWS</CompanyName>
+          </ExperienceItemHeader>
+          <PositionTitle>Software Development Engineer II</PositionTitle>
+          <p style={experienceTextStyle}>
+            Currently working Amazon Cognito as an SDE II. Amazon Cognito is an
+            AWS Service which provides authentication and authorization for
+            applications. Our services handle billions of requests per day.
+          </p>
+          <p style={experienceTextStyle}>
+            I designed and launched the{" "}
+            <Link
+              href="https://aws.amazon.com/about-aws/whats-new/2022/05/amazon-cognito-risk-evaluation-advanced-security-features/"
+              target="_blank"
+            >
+              IP Address Propagation feature
+            </Link>{" "}
+            for Unauthenticated operations which improved risk evaluation for
+            customers using a proxy service.
+          </p>
+          <SkillContainer>
+            <SkillPill>Java</SkillPill>
+            <SkillPill>TypeScript</SkillPill>
+            <SkillPill>AWS</SkillPill>
+            <SkillPill>CDK</SkillPill>
+          </SkillContainer>
+        </ExperienceElement>
+        <ExperienceElement
+          date="Jul 2020 - Aug 2021"
           iconStyle={{ background: "#FCCFAC" }}
           contentStyle={experienceItemContentStyle}
           contentArrowStyle={{ display: "none" }}
@@ -116,13 +156,13 @@ function Experience() {
             ></CompanyLogo>
             <CompanyName>Amazon</CompanyName>
           </ExperienceItemHeader>
-          <PositionTitle>Software Development Engineer</PositionTitle>
+          <PositionTitle>Software Development Engineer I</PositionTitle>
           <p style={experienceTextStyle}>
-            Currently working within the Amazon Tax Organization. Working across
-            multiple teams to build and design systems that consume and analyze
-            data from over 1 billion transactions per day. To handle the high
-            volume of traffic, we are always considering scalability,
-            availability and resiliency in our systems.
+            Worked within Amazon Tax Organization. Working across multiple teams
+            to build and design systems that consume and analyze data from over
+            1 billion transactions per day. To handle the high volume of
+            traffic, we are always considering scalability, availability and
+            resiliency in our systems.
           </p>
           <SkillContainer>
             <SkillPill>Java</SkillPill>
