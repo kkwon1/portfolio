@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "23af4405443f5af6789e57527e06803b",
+    "revision": "e1da96fa6ea1317128a44eba13c70843",
     "url": "/index.html"
   },
   {
-    "revision": "a3ffa1afed7ca092f3ba",
+    "revision": "03ee36cfea49f8a145de",
     "url": "/static/css/2.a641e29a.chunk.css"
   },
   {
-    "revision": "2a2f2586d9efa4cc9448",
+    "revision": "e0612373c11d51d454e8",
     "url": "/static/css/main.0c0a77ae.chunk.css"
   },
   {
-    "revision": "a3ffa1afed7ca092f3ba",
-    "url": "/static/js/2.6b9edcdc.chunk.js"
+    "revision": "03ee36cfea49f8a145de",
+    "url": "/static/js/2.e101c96a.chunk.js"
   },
   {
     "revision": "37db3f2a2ae5fbcc7f1de16d45157682",
-    "url": "/static/js/2.6b9edcdc.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.e101c96a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2a2f2586d9efa4cc9448",
-    "url": "/static/js/main.ead9532a.chunk.js"
+    "revision": "e0612373c11d51d454e8",
+    "url": "/static/js/main.3afa4e23.chunk.js"
   },
   {
     "revision": "430f72daf7c3a4d42642",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "64c5353ddfa9f6d949f58cd357fad1bc",
     "url": "/static/media/hootsuite-logo.64c5353d.png"
+  },
+  {
+    "revision": "0ec8897393bb425f20b60c0921f4c284",
+    "url": "/static/media/imperva-logo.0ec88973.png"
   },
   {
     "revision": "a98b9c97113922e3e029746e592e1d5d",
