@@ -119,8 +119,8 @@ const NewAbout = forwardRef((props, ref) => {
           <AboutSectionContainer>
             <span>
               Hi! I'm a Software Developer at{" "}
-              <Link href="https://aws.amazon.com/" target="_blank">
-                AWS
+              <Link href="https://www.imperva.com/" target="_blank">
+                Imperva
               </Link>
               .
               <br />

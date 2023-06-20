@@ -6,6 +6,7 @@ import AWS from "../resources/aws-logo.png";
 import Hootsuite from "../resources/hootsuite-logo.png";
 import SAP from "../resources/sap-logo.png";
 import Orbis from "../resources/orbis-logo.png";
+import Imperva from "../resources/imperva-logo.png";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -105,7 +106,49 @@ function Experience() {
 
       <VerticalTimeline layout="1-column">
         <ExperienceElement
-          date="Aug 2021 - Present"
+          date="May 2023 - Present"
+          iconStyle={{ background: "#FCCFAC" }}
+          contentStyle={experienceItemContentStyle}
+          contentArrowStyle={{ display: "none" }}
+        >
+          <ExperienceItemHeader>
+            <CompanyLogo
+              style={{ width: "50", height: "50px" }}
+              src={Imperva}
+              alt="Imperva"
+            ></CompanyLogo>
+            <CompanyName>Imperva</CompanyName>
+          </ExperienceItemHeader>
+          <PositionTitle>Senior Software Engineer</PositionTitle>
+          <p style={experienceTextStyle}>
+            Building and shipping features on the{" "}
+            <Link
+              href="https://docs.imperva.com/en-US/bundle/account-takeover/page/account-takeover/account-takeover.htm"
+              target="_blank"
+            >
+              Account Takeover (ATO)
+            </Link>{" "}
+            Protection and{" "}
+            <Link
+              href="https://docs.imperva.com/en-US/bundle/client-side-protection/page/client-side-protection/introduction.htm"
+              target="_blank"
+            >
+              Client-Side Protection (CSP)
+            </Link>{" "}
+            products 🚀.
+          </p>
+          <SkillContainer>
+            <SkillPill>Java</SkillPill>
+            <SkillPill>React</SkillPill>
+            <SkillPill>Cassandra DB</SkillPill>
+            <SkillPill>Kafka</SkillPill>
+            <SkillPill>Kubernetes</SkillPill>
+            <SkillPill>Docker</SkillPill>
+            <SkillPill>Jenkins</SkillPill>
+          </SkillContainer>
+        </ExperienceElement>
+        <ExperienceElement
+          date="Aug 2021 - May 2023"
           iconStyle={{ background: "#FCCFAC" }}
           contentStyle={experienceItemContentStyle}
           contentArrowStyle={{ display: "none" }}
@@ -120,9 +163,15 @@ function Experience() {
           </ExperienceItemHeader>
           <PositionTitle>Software Development Engineer II</PositionTitle>
           <p style={experienceTextStyle}>
-            Currently working Amazon Cognito as an SDE II. Amazon Cognito is an
-            AWS Service which provides authentication and authorization for
+            Worked at Amazon Cognito as an SDE II. Amazon Cognito is an AWS
+            Service which provides authentication and authorization for
             applications. Our services handle billions of requests per day.
+          </p>
+          <p style={experienceTextStyle}>
+            I designed and implemented a solution to detect User Enumeration bot
+            activity for Password Reset flows. Additionally, improved
+            operational posture of our services by onboarding them to a
+            serverless testing framework for canary and integration testing.
           </p>
           <p style={experienceTextStyle}>
             I designed and launched the{" "}
@@ -132,8 +181,8 @@ function Experience() {
             >
               IP Address Propagation feature
             </Link>{" "}
-            for Unauthenticated operations which improved risk evaluation for
-            customers using a proxy service.
+            for Unauthenticated operations to improve risk evaluation for
+            customers behind a proxy service.
           </p>
           <SkillContainer>
             <SkillPill>Java</SkillPill>
