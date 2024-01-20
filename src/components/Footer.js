@@ -81,7 +81,7 @@ function Footer() {
           </a>
         </IconContainer>
       </IconsContainer>
-      <CopyrightContainer> Kevin Kwon &copy; 2023</CopyrightContainer>
+      <CopyrightContainer> Kevin Kwon &copy; 2024</CopyrightContainer>
     </FooterContainer>
   );
 }
